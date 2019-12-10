@@ -5,20 +5,20 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
-
     <ImageView
         android:id="@+id/clover"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="272dp"
+        android:layout_width="170dp"
+        android:layout_height="147dp"
+        android:layout_marginEnd="256dp"
         android:elevation="6dp"
-        android:src="@drawable/clover"
+        android:src="@drawable/shield"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <LinearLayout
         android:id="@+id/textsplash"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
@@ -30,19 +30,41 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <TextView
-            android:layout_width="wrap_content"
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/email"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Good Morning"
-            android:textColor="#FFF"
-            android:textSize="24sp" />
+            tools:layout_editor_absoluteX="205dp"
+            tools:layout_editor_absoluteY="235dp"
+            tools:ignore="MissingConstraints">
 
-        <TextView
-            android:layout_width="wrap_content"
+            <android.support.design.widget.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/password"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Mr Panda Risky"
-            android:textColor="#FFF"
-            android:textSize="16sp" />
+            tools:layout_editor_absoluteX="233dp"
+            tools:layout_editor_absoluteY="207dp">
+
+            <android.support.design.widget.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Şifre" />
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:id="@+id/splash"
+            android:background="@android:color/transparent"
+            android:text="Giriş"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content">
+        </Button>
+
 
     </LinearLayout>
 
@@ -61,16 +83,9 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Explore"
+            android:text="Catcher"
             android:textColor="#FFF"
             android:textSize="24sp" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Simply makes design good"
-            android:textColor="#FFF"
-            android:textSize="16sp" />
 
     </LinearLayout>
 
